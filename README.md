@@ -114,17 +114,6 @@ PowerPoint presentation.
 
 ---
 
-## 5. Testing Checklist 
-
-- [ ] `python main.py` opens the GUI window without errors.
-- [ ] Rover reaches the red goal marker in the window (status changes to
-      "REACHED GOAL").
-- [ ] Pressing `N` generates a new random terrain and restarts the mission.
-- [ ] Pressing `SPACE` pauses/resumes correctly.
-- [ ] `python report_simulation.py` produces `lunabot_path.png` and
-      `lunabot_run.gif` without errors.
-
----
 
 
   is the number of edges explored, bounded by grid size squared for a
