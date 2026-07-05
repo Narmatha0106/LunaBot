@@ -114,7 +114,7 @@ PowerPoint presentation.
 
 ---
 
-## 5. Testing Checklist (before submission)
+## 5. Testing Checklist 
 
 - [ ] `python main.py` opens the GUI window without errors.
 - [ ] Rover reaches the red goal marker in the window (status changes to
@@ -126,33 +126,7 @@ PowerPoint presentation.
 
 ---
 
-## 6. Preparing for Submission
 
-1. Take 2–3 screenshots of the running GUI (different mission stages:
-   start, mid-navigation with an obstacle replan, goal reached) — use
-   your OS screenshot tool (Windows: `Win+Shift+S`, macOS: `Cmd+Shift+4`).
-2. Insert these screenshots + `lunabot_path.png` into the project report
-   document (see `LunaBot_Software_Project_Report.docx`).
-3. Zip the entire project folder (`LunaBot/`) — this is your source-code
-   submission.
-4. Submit: the report (.docx or PDF export) + the zipped source code
-   folder + (optionally) the `lunabot_run.gif` as a demo attachment.
-
----
-
-## 7. Possible Viva / Review Questions & Short Answers
-
-- **Why A\*?** It guarantees the shortest path and is efficient enough to
-  run on low-power onboard processors, unlike more exhaustive search
-  methods.
-- **What happens if no path exists?** The planner returns `None`, and the
-  system logs an error instead of crashing — handled in `robot.py`.
-- **How is this different from a hardware rover?** The same navigation
-  algorithm (A* + reactive sensing) is designed to be portable to real
-  sensors (ultrasonic/IR now, LIDAR/stereo camera later) with minimal
-  changes — only `sensor.py` and `obstacles.py` would be replaced with
-  real sensor drivers.
-- **What is the time complexity of A\*?** O(E) in the worst case where E
   is the number of edges explored, bounded by grid size squared for a
   grid graph; in practice it explores far fewer nodes due to the
   heuristic.
