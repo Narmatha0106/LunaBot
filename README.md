@@ -115,7 +115,3 @@ PowerPoint presentation.
 ---
 
 
-
-  is the number of edges explored, bounded by grid size squared for a
-  grid graph; in practice it explores far fewer nodes due to the
-  heuristic.
